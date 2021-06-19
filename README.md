@@ -1,9 +1,8 @@
 # Farmy - MERN stack application
+### Demo - [Farmy](https://farmy-global.herokuapp.com/)
 <p align="center">
   <img width="900" height="708" src="https://user-images.githubusercontent.com/66121679/122647880-b6c10e80-d126-11eb-8ab5-e1397b2d5c36.png">
 </p>
-
-### Live demo - [Farmy](https://farmy-global.herokuapp.com/)
 
 ## Stack used:
 <p align="center">
