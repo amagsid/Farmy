@@ -15,7 +15,7 @@
     "lint:fix": "eslint \"**/*.js\" --fix ",
     "prepare": "husky install"
   },
-  "author": "Brad Traversy",
+  "author": "Class30 - HackYourFuture",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1",
