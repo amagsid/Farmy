@@ -1,4 +1,17 @@
-# Farmy
+# Farmy - MERN stack application
+<p align="center">
+  <img width="900" height="708" src="https://user-images.githubusercontent.com/66121679/122647880-b6c10e80-d126-11eb-8ab5-e1397b2d5c36.png">
+</p>
+
+##Stack used:
+<p align="center">
+  <img width="750" height="405" src="https://user-images.githubusercontent.com/66121679/122647879-b4f74b00-d126-11eb-923b-f6c5b4d1ae74.jpg">
+</p>
+
+##Customer journey:
+<p align="center">
+  <img width="750" height="420" src="https://user-images.githubusercontent.com/66121679/122647877-b32d8780-d126-11eb-9e5a-e1479a03a113.jpg">
+</p>
 
 ## Usage
 
