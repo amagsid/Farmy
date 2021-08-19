@@ -6263,17 +6263,7 @@ a.close.disabled {
 .carousel-indicators .active {
   opacity: 1;
 }
-.carousel-caption {
-  position: absolute;
-  right: 15%;
-  bottom: 20px;
-  left: 15%;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #fff;
-  text-align: center;
-}
+
 @-webkit-keyframes spinner-border {
   to {
     -webkit-transform: rotate(360deg);

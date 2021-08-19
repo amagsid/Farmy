@@ -20,6 +20,7 @@ import PreferenceScreen from './screens/PreferenceScreen';
 import RegisterBundleScreen from './screens/RegisterBundleScreen';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import ReactMapGL from 'react-map-gl';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   return (

@@ -49,48 +49,49 @@ const HomeScreen = ({ match }) => {
 
           <Carousel style={{ color: 'white', fontSize: 'large', height: '460px' }}>
             <Carousel.Item>
-              <img className=" " src="https://i.ibb.co/6bFf3Ln/locals.jpg" alt="support locals" />
-              <Carousel.Caption>
+              <img className="woman-in-farm carousel-img" src="https://i.ibb.co/6bFf3Ln/locals.jpg" alt="support locals" style={{width:'100%'}} />
+              <Carousel.Caption className="carousel-caption">
                 <h3 style={{ color: 'white' }} className="header">
                   Support locals and pay less
                 </h3>
-                <p className="label" className="sub-header">
+                {/* <p className="label" className="sub-header">
                   Our products are produced locally. Our mission is to provide you healthy fresh
                   ingredients while paying less
-                </p>
+                </p> */}
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-block w-100"
-                src="https://images.unsplash.com/photo-1518843875459-f738682238a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3426&q=80"
+                className="carousel-img veggies-pic"
+                src="https://images.unsplash.com/photo-1504712598893-24159a89200e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
                 alt="healthy and fresh"
-                className="veggies-pic"
+                style={{width:'100%'}}
+          
               />
-              <Carousel.Caption>
+              <Carousel.Caption className="carousel-caption">
                 <h3 style={{ color: 'white' }} className="header">
-                  The freshest, straight to you
+                  fresh, from the farm to you
                 </h3>
-                <p className="label" className="sub-header">
+                {/* <p className="label" className="sub-header">
                   Always fresh, ready in no time. 100% taste. 0% fuss.
-                </p>
+                </p> */}
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-block w-100"
-                className="car-img"
+                className="carousel-img car-img"
+             
                 src="https://i.ibb.co/cFPjk9H/Farmy2.jpg"
                 alt="Delivery"
               />
-              <Carousel.Caption>
+              <Carousel.Caption className="carousel-caption">
                 <h3 style={{ color: 'white' }} className="header">
                   Next-day delivery
                 </h3>
-                <p className="label" className="sub-header">
+                {/* <p className="label" className="sub-header">
                   Sustainable packaging keeps everything cool for up to 24 hours, order by 9pm.
                   Flash frozen and delivered in a flash.
-                </p>
+                </p> */}
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
@@ -156,7 +157,7 @@ const HomeScreen = ({ match }) => {
           </Container>
 
           <Container className="mb-4">
-            <h1>Our Farmers</h1>
+            <h1>Farm Locaions Across the Netherlands</h1>
             <FarmsMap />
             <FarmStory />
           </Container>

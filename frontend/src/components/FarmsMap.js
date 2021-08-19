@@ -45,7 +45,7 @@ const FarmsMap = () => {
   );
 
   return (
-    <div>
+    <>
       {loading && <Loader />}
       {error && <Message variant="danger">{error}</Message>}
       <ReactMapGL
@@ -87,7 +87,7 @@ const FarmsMap = () => {
           </Popup>
         )}
       </ReactMapGL>
-    </div>
+    </>
   );
 };
 
