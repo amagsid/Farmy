@@ -36,6 +36,7 @@
     "react-facebook-login": "^4.1.1",
     "react-ga": "^3.3.0",
     "react-google-login": "^5.2.2",
+    "react-simple-typewriter": "^3.0.0",
     "request": "^2.88.2",
     "validator": "^13.6.0"
   },

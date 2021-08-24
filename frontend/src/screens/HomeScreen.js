@@ -14,6 +14,8 @@ import feedback from '../feedback.json';
 import FarmsMap from '../components/FarmsMap';
 import FarmStory from '../components/FarmStory';
 import PersonalizedRecommendations from '../components/PersonalizedRecommendations';
+import background from "../../src/images/meal2.jpg";
+import CustomSimpleTypewriter from '../components/TypeWriter'
 
 const HomeScreen = ({ match }) => {
   const dispatch = useDispatch();
@@ -36,6 +38,13 @@ const HomeScreen = ({ match }) => {
 
   return (
     <>
+    <Container fluid >
+  <Row>
+    <Col className='p-0' style={{ backgroundImage: `url(${background})`, height:'80vh', backgroundSize: 'cover' }}>
+      <CustomSimpleTypewriter/>
+      </Col>
+  </Row>
+</Container>
       <Meta />
       {loading && loadingLatest && <Loader />}
       {error && errorLatest && <Message variant="danger">{error}</Message>}
@@ -47,54 +56,6 @@ const HomeScreen = ({ match }) => {
             </Message>
           )}
 
-          <Carousel style={{ color: 'white', fontSize: 'large', height: '460px' }}>
-            <Carousel.Item>
-              <img className="woman-in-farm carousel-img" src="https://i.ibb.co/6bFf3Ln/locals.jpg" alt="support locals" style={{width:'100%'}} />
-              <Carousel.Caption className="carousel-caption">
-                <h3 style={{ color: 'white' }} className="header">
-                  Support locals and pay less
-                </h3>
-                {/* <p className="label" className="sub-header">
-                  Our products are produced locally. Our mission is to provide you healthy fresh
-                  ingredients while paying less
-                </p> */}
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="carousel-img veggies-pic"
-                src="https://images.unsplash.com/photo-1504712598893-24159a89200e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
-                alt="healthy and fresh"
-                style={{width:'100%'}}
-          
-              />
-              <Carousel.Caption className="carousel-caption">
-                <h3 style={{ color: 'white' }} className="header">
-                  fresh, from the farm to you
-                </h3>
-                {/* <p className="label" className="sub-header">
-                  Always fresh, ready in no time. 100% taste. 0% fuss.
-                </p> */}
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="carousel-img car-img"
-             
-                src="https://i.ibb.co/cFPjk9H/Farmy2.jpg"
-                alt="Delivery"
-              />
-              <Carousel.Caption className="carousel-caption">
-                <h3 style={{ color: 'white' }} className="header">
-                  Next-day delivery
-                </h3>
-                {/* <p className="label" className="sub-header">
-                  Sustainable packaging keeps everything cool for up to 24 hours, order by 9pm.
-                  Flash frozen and delivered in a flash.
-                </p> */}
-              </Carousel.Caption>
-            </Carousel.Item>
-          </Carousel>
 
           {userInfo && userInfo.preferences?.diet !== '' ? (
             <PersonalizedRecommendations
@@ -130,7 +91,6 @@ const HomeScreen = ({ match }) => {
             </>
           )}
           <Container className="mb-5" className={!userInfo && 'bundlesPadding'}>
-            <h1>Our Bundles</h1>
 
             <Filter keyword={keyword} />
             {loading && <Loader />}

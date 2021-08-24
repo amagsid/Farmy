@@ -6,7 +6,9 @@ import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import SearchBox from './SearchBox';
 import { logout } from '../actions/userActions';
 import ReactGA from 'react-ga';
+import logo from '../../src/images/logo.png'
 const { REACT_APP_GUA_ID } = process.env;
+
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -91,10 +93,10 @@ const Header = () => {
   return (
     <header>
       <Navbar expand="lg" collapseOnSelect className="py-2">
-        <Container style={{ color: '#ffffff' }}>
+        <Container >
           <LinkContainer to="/">
             <Navbar.Brand onClick={gaLogoEvent}>
-              <img src="https://i.ibb.co/mBnWcKg/Farmy-copy-1.png" width="80" alt="Farmy logo" />
+              <img src={logo} width="80" alt="Farmy logo" />
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
