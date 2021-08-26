@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { Row, Col, Container, Button, Carousel } from 'react-bootstrap';
+import { Row, Col, Container, Button } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import Message from '../components/Message';
 import Loader from '../components/Loader';
@@ -16,6 +16,7 @@ import FarmStory from '../components/FarmStory';
 import PersonalizedRecommendations from '../components/PersonalizedRecommendations';
 import background from "../../src/images/meal2.jpg";
 import CustomSimpleTypewriter from '../components/TypeWriter'
+import HowItWorks from '../components/HowItWorks';
 
 const HomeScreen = ({ match }) => {
   const dispatch = useDispatch();
@@ -38,13 +39,7 @@ const HomeScreen = ({ match }) => {
 
   return (
     <>
-    <Container fluid >
-  <Row>
-    <Col className='p-0' style={{ backgroundImage: `url(${background})`, height:'80vh', backgroundSize: 'cover' }}>
-      <CustomSimpleTypewriter/>
-      </Col>
-  </Row>
-</Container>
+ 
       <Meta />
       {loading && loadingLatest && <Loader />}
       {error && errorLatest && <Message variant="danger">{error}</Message>}
@@ -55,6 +50,15 @@ const HomeScreen = ({ match }) => {
               Welcome {userInfo.name}!
             </Message>
           )}
+             <Container fluid >
+  <Row>
+    <Col className='p-0' style={{ backgroundImage: `url(${background})`, height:'80vh', backgroundSize: 'cover' }}>
+      <CustomSimpleTypewriter/>
+      </Col>
+  </Row>
+</Container>
+
+{/* <HowItWorks/> */}
 
 
           {userInfo && userInfo.preferences?.diet !== '' ? (

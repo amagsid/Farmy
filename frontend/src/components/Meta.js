@@ -12,7 +12,7 @@ const Meta = ({ title, description, keywords }) => {
 };
 
 Meta.defaultProps = {
-  title: 'Welcome To Farmy',
+  title: 'YumFarm: from the farm to you',
   description: 'Farm fresh produce straight to your doorstrep',
   keywords: 'fresh produce, farm, veggetables, fruits, berries, healthy, organic',
 };
